@@ -1,0 +1,14 @@
+@import 'reset.css';
+@import 'header.css';
+@import 'home.css';
+@import 'footer.css';
+
+:root {
+    --azul: #3772FF;
+    --branco: #FFFFFF;
+    --creme: #FCF0E3;
+    --verde: #36D6AD;
+    --vermelho: #FC7071;
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'IBM Plex Sans', sans-serif;
+}

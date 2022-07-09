@@ -1,0 +1,11 @@
+.cabecalho{
+    padding: 3rem;
+    /* display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    width: 30%; */
+}
+
+.cabecalho__icones{
+    padding-right: 3rem;
+}
