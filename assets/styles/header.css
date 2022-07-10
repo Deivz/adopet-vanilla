@@ -3,6 +3,9 @@ header{
 }
 
 .cabecalho{
+    align-items: center;
+    display: flex;
+    justify-content: baseline;
     padding: 3rem;
 }
 

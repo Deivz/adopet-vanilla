@@ -13,7 +13,8 @@
 
 <body>
     <header class="cabecalho">
-        <a href="/index.html"><img src="./assets/images/logo_branca.svg" alt="Logomarca da Adopet" class="cabecalho__logo" /></a>
+        <a href="/index.html"><img src="./assets/images/logo_branca.svg" alt="Logomarca da Adopet"
+                class="cabecalho__logo" /></a>
         <a href="/index.html"><img src="./assets/images/Casa.svg" alt="Página inicial" class="cabecalho__icones" /></a>
         <a href="#"><img src="./assets/images/Mensagens.svg" alt="Caixa de mensagens" class="cabecalho__icones" /></a>
     </header>
@@ -22,21 +23,28 @@
         <p class="conteudo__texto--titulo">Ainda não tem cadastro?</p>
         <p class="conteudo__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
         <form class="formulario">
-            
-                <label for="email">Email</label>
-                <input name="email" id="email" class="email" type="email" placeholder="Escolha seu melhor email">
-                <label for="nome">Nome</label>
-                <input name="nome" id="nome" class="nome" type="text" placeholder="Digite seu nome completo">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" required id="senha" class="senha__confirma" placeholder="Crie uma senha">
-                <i class="far fa-eye" id="icone__olho"></i>
-                <label for="senha__confirma">Confirma sua senha</label>
+            <label for="email">Email</label>
+            <input name="email" id="email" class="email" type="email" placeholder="Escolha seu melhor email">
+            <label for="nome">Nome</label>
+            <input name="nome" id="nome" class="nome" type="text" placeholder="Digite seu nome completo">
+            <label for="senha">Senha</label>
+            <div class="input__senha">
+                <input type="password" name="senha" required id="senha" class="senha" placeholder="Repita a senha criada acima">
+                <button class="icone__olho" type="button">
+                    <i class="far fa-eye" id="icone__olho" ></i>
+                </button>
+            </div>
+            <label for="senha__confirma">Confirma sua senha</label>
+            <div class="input__senha">
                 <input type="password" name="senha__confirma" required id="senha__confirma" class="senha__confirma" placeholder="Repita a senha criada acima">
-                <i class="far fa-eye" id="icone__olho"></i>
-            
-            <input type="submit" value="Cadastrar" class="botao">
+                <button class="icone__olho" type="button">
+                    <i class="far fa-eye" id="icone__olho" ></i>
+                </button>
+            </div>
+            <div class="container__botao">
+                <input type="submit" value="Cadastrar" class="botao">
+            </div>
         </form>
-
     </main>
     <footer>
         <div class="rodape">2022 - Desenvolvido por Alura.</div>

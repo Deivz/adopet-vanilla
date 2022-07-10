@@ -1,7 +1,12 @@
 body {
     background-color: var(--branco);
-    background-image: url('../images/vetor_topo.svg'), url('../images/linha_superior.svg'), url('../images/vetor_esquerdo.svg');
-    background-position: left top, left top, left 50vh;
+    background-image: url('../images/pata_um.svg'),
+        url('../images/pata_dois.svg'),
+        url('../images/pata_tres.svg'),
+        url('../images/vetor_topo.svg'),
+        url('../images/linha_superior.svg'),
+        url('../images/vetor_esquerdo.svg');
+    background-position: right top, right 6vh, 36vh top, left top, left top, left 50vh;
     background-repeat: no-repeat;
     color: var(--cinza);
     display: flex;
@@ -46,6 +51,7 @@ body {
 label {
     display: block;
     margin-bottom: .5rem;
+    width: 100%;
 }
 
 input {
@@ -63,10 +69,27 @@ input::placeholder {
     font-size: 12px;
 }
 
-#icone__olho {
-    cursor: pointer;
-    margin-left: -30px;
-    margin-top: 12px;
+.icone__olho {
+    border: none;
+    color: var(--cinza);
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    z-index: 10;
+}
+
+.input__senha {
+    position: relative;
+    width: 312px;
+}
+
+.input__senha input {
+    width: 100%;
+}
+
+.container__botao {
+    width: 100%;
 }
 
 .botao {
@@ -83,4 +106,22 @@ input::placeholder {
     margin: 1rem auto 6rem auto;
     text-decoration: none;
     width: 180px;
+}
+
+@media (min-height: 800px) {
+    body {
+        background-position: right top, right 5vh, 31vh top, left top, left top, left 40vh;
+    }
+}
+
+@media (min-width:400px) and (orientation: landscape) {
+    body {
+        background-position: right top, right 6vw, 80vw top, left top, left top, left 90vh;
+    }
+}
+
+@media (min-width:800px) and (orientation: landscape) {
+    body {
+        background-position: right top, right 5vw, 85vw top, left top, left top, left 78vh;
+    }
 }
