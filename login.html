@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/cadastro.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/login.css" />
     <title>Adopet</title>
 </head>
 
@@ -24,29 +24,20 @@
     </header>
     <main class="conteudo">
         <img src="./assets/images/logo_azul.svg" alt="Logomarca da Adopet" class="logo" />
-        <p class="conteudo__texto--titulo">Ainda não tem cadastro?</p>
-        <p class="conteudo__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+        <p class="conteudo__texto">Já tem conta? Então faça seu login:</p>
         <form class="formulario">
             <label for="email">Email</label>
-            <input name="email" id="email" class="email" type="email" placeholder="Escolha seu melhor email">
-            <label for="nome">Nome</label>
-            <input name="nome" id="nome" class="nome" type="text" placeholder="Digite seu nome completo">
+            <input name="email" id="email" class="email" type="email" placeholder="Insira seu email">
             <label for="senha">Senha</label>
             <div class="input__senha">
-                <input type="password" name="senha" required id="senha" class="senha" placeholder="Crie uma senha">
+                <input type="password" name="senha" required id="senha" class="senha" placeholder="Insira sua senha">
                 <button class="icone__olho" type="button">
                     <i class="far fa-eye" id="icone__olho" ></i>
                 </button>
             </div>
-            <label for="senha__confirma">Confirma sua senha</label>
-            <div class="input__senha">
-                <input type="password" name="senha__confirma" required id="senha__confirma" class="senha__confirma" placeholder="Repita a senha criada acima">
-                <button class="icone__olho" type="button">
-                    <i class="far fa-eye" id="icone__olho" ></i>
-                </button>
-            </div>
+            <a href="" class="esqueceu__senha">Esqueci minha senha</a>
             <div class="container__botao">
-                <input type="submit" value="Cadastrar" class="botao">
+                <input type="submit" value="Entrar" class="botao">
             </div>
         </form>
     </main>
