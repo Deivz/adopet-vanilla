@@ -1,11 +1,12 @@
 @import 'reset.css';
 @import 'header.css';
-@import 'home.css';
 @import 'footer.css';
 
 :root {
     --azul: #3772FF;
     --branco: #FFFFFF;
+    --cinza: #737380;
+    --cinza-claro: #F6F6F6;
     --creme: #FCF0E3;
     --verde: #36D6AD;
     --vermelho: #FC7071;
